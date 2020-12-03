@@ -13,7 +13,7 @@ clickHandler = () => {
     });
 }
 
-rentClickHandler = () => {
+localClickHandler = () => {
     let clickHandler = this.props.clickHandler
     clickHandler(this.props.movieObj)
 }
@@ -25,9 +25,9 @@ rentClickHandler = () => {
     <div className="card">
         <h1>{this.props.movieObj.title}</h1>
         <button onClick={this.clickHandler}>
-            Synopsis: {this.state.visible ? this.props.movieObj.synopsis: "click to view"}
+            Synopsis: {this.state.visible ? this.props.movieObj.synopsis: "🔎"}
         </button>
-        <button onClick={this.rentClickHandler}>Rent Movie</button>
+        <button onClick={this.localClickHandler}>🍿🎥</button>
     </div>
   );}
 }

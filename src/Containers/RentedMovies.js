@@ -6,7 +6,7 @@ class RentedMovies extends React.Component{
 renderMovies = () => {
     let rentedMoviesArray = this.props.rentedMoviesArray;
     console.log("rented movie array:",rentedMoviesArray);
-    return rentedMoviesArray.map(element => <MovieCard key={element.id} movieObj={element}/>)
+    return rentedMoviesArray.map(element => <MovieCard key={element.id} movieObj={element} clickHandler={this.props.clickHandler}/>)
 }
 
   render(){

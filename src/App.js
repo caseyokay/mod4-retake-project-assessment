@@ -16,21 +16,25 @@ class App extends React.Component{
     .then(data => this.setState({api: data}));
   };
 
-  clickHandler = (movieObj) => {
+  rentMovie = (movieObj) => {
     console.log("Renting Movie In App", movieObj)
     this.setState({
       rentedMovies: [...this.state.rentedMovies, movieObj]
     })
     console.log("Updated array:", this.state.rentedMovies)
+  }
 
+  returnMovie = (movieObj) => {
+    console.log("Returning Movie", movieObj)
+    
   }
 
 
   render(){
   return (
     <div className="App">
-      <MoviesList movieArray={this.state.api} clickHandler={this.clickHandler}/>
-      <RentedMovies rentedMoviesArray={this.state.rentedMovies}/>
+      <MoviesList movieArray={this.state.api} clickHandler={this.rentMovie}/>
+      <RentedMovies rentedMoviesArray={this.state.rentedMovies} clickHandler={this.returnMovie}/>
     </div>
   );}
 }
