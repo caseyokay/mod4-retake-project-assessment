@@ -5,8 +5,8 @@ class MoviesList extends React.Component{
 
 renderMovies = () => {
     let movieArray = this.props.movieArray;
-    console.log(movieArray);
-    return movieArray.map(element => <MovieCard key={element.id} movieObj={element} clickHandler={this.props.clickHandler}/>)
+    let filteredArray = movieArray.filter(element => element.title.toLowerCase().includes(this.props.searchValue.toLowerCase()))
+    return filteredArray.map(element => <MovieCard key={element.id} movieObj={element} clickHandler={this.props.clickHandler}/>)
 }
 
   render(){

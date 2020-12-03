@@ -5,7 +5,7 @@ class RentedMovies extends React.Component{
 
 renderMovies = () => {
     let rentedMoviesArray = this.props.rentedMoviesArray;
-    console.log("rented movie array:",rentedMoviesArray);
+    // console.log("rented movie array:",rentedMoviesArray);
     return rentedMoviesArray.map(element => <MovieCard key={element.id} movieObj={element} clickHandler={this.props.clickHandler}/>)
 }
 
@@ -13,7 +13,7 @@ renderMovies = () => {
     // console.log(this.props)
   return(
     <div className="rentedMoviesList"> 
-    <h2>Rented Movies:</h2>
+    <h1>Rented Movies:</h1>
     {this.renderMovies()}
     </div>
   );

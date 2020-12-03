@@ -2,12 +2,14 @@ import './App.css';
 import React from 'react';
 import MoviesList from './Containers/MoviesList';
 import RentedMovies from './Containers/RentedMovies';
+import SearchForm from './Components/SearchForm';
 
 
 class App extends React.Component{
   state={
     api:[],
-    rentedMovies: []
+    rentedMovies: [],
+    searchValue: ""
   }
 
   componentDidMount(){
@@ -17,28 +19,35 @@ class App extends React.Component{
   };
 
   rentMovie = (movieObj) => {
-    console.log("Renting Movie In App", movieObj)
+    // console.log("Renting Movie In App", movieObj)
     let rentedMovies = this.state.rentedMovies
     const capacity = rentedMovies.length > 2
     if (!capacity) this.setState({
       rentedMovies: [...this.state.rentedMovies, movieObj]
     })
-    console.log("Updated array:", this.state.rentedMovies)
+    // console.log("Updated array:", this.state.rentedMovies)
   }
 
   returnMovie = (movieObj) => {
-    console.log("Returning Movie", movieObj)
+    // console.log("Returning Movie", movieObj)
     let filteredArray = this.state.rentedMovies.filter(element => element !== movieObj)
     this.setState({
       rentedMovies: filteredArray
     })
   }
 
+  //now create a searchchangehandler that can lift user input
+  searchChangeHandler=(e)=>{
+    console.log(e.target.value)
+    this.setState({searchValue: e.target.value});
+  }
+
 
   render(){
   return (
     <div className="App">
-      <MoviesList movieArray={this.state.api} clickHandler={this.rentMovie}/>
+      <SearchForm searchValue={this.state.searchValue} changeHandler={this.searchChangeHandler}/>
+      <MoviesList movieArray={this.state.api} clickHandler={this.rentMovie} searchValue={this.state.searchValue}/>
       <RentedMovies rentedMoviesArray={this.state.rentedMovies} clickHandler={this.returnMovie}/>
     </div>
   );}
