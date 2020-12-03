@@ -19,8 +19,10 @@ class App extends React.Component{
   clickHandler = (movieObj) => {
     console.log("Renting Movie In App", movieObj)
     this.setState({
-      rentedMovies: [...this.state.rentedMovies], movieObj
+      rentedMovies: [...this.state.rentedMovies, movieObj]
     })
+    console.log("Updated array:", this.state.rentedMovies)
+
   }
 
 
