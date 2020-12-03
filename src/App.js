@@ -26,7 +26,10 @@ class App extends React.Component{
 
   returnMovie = (movieObj) => {
     console.log("Returning Movie", movieObj)
-    
+    let filteredArray = this.state.rentedMovies.filter(element => element !== movieObj)
+    this.setState({
+      rentedMovies: filteredArray
+    })
   }
 
 
