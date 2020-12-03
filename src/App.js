@@ -18,7 +18,9 @@ class App extends React.Component{
 
   rentMovie = (movieObj) => {
     console.log("Renting Movie In App", movieObj)
-    this.setState({
+    let rentedMovies = this.state.rentedMovies
+    const capacity = rentedMovies.length > 2
+    if (!capacity) this.setState({
       rentedMovies: [...this.state.rentedMovies, movieObj]
     })
     console.log("Updated array:", this.state.rentedMovies)
