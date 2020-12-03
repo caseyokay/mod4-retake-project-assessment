@@ -54,6 +54,11 @@
       "title": "HELLO NEW MOVIE",
       "synopsis": "LSKsdkf",
       "id": 11
+    },
+    {
+      "title": "New Movie Title",
+      "synopsis": "Bla",
+      "id": 12
     }
   ]
 }

@@ -53,9 +53,9 @@ class App extends React.Component{
       body: JSON.stringify(movieObj),
     })
     .then(response => response.json())
-    .then(data => {
-      console.log('Success:', data);
-  })
+    .then(newMovie => this.setState({api: [...this.state.api],  newMovie}));
+    // .then(data => {
+    //   console.log('Success:', data);
 }
 
 
