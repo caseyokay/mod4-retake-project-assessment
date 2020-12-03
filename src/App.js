@@ -3,6 +3,7 @@ import React from 'react';
 import MoviesList from './Containers/MoviesList';
 import RentedMovies from './Containers/RentedMovies';
 import SearchForm from './Components/SearchForm';
+import AddMovieForm from './Components/AddMovieForm';
 
 
 class App extends React.Component{
@@ -48,6 +49,7 @@ class App extends React.Component{
     <div className="App">
       <SearchForm searchValue={this.state.searchValue} changeHandler={this.searchChangeHandler}/>
       <MoviesList movieArray={this.state.api} clickHandler={this.rentMovie} searchValue={this.state.searchValue}/>
+      <AddMovieForm/>
       <RentedMovies rentedMoviesArray={this.state.rentedMovies} clickHandler={this.returnMovie}/>
     </div>
   );}
