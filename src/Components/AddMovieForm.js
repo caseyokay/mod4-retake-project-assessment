@@ -13,13 +13,21 @@ class AddMovieForm extends React.Component{
         })
     }
 
+    localClickHandler = (e) => {
+        e.preventDefault()
+        console.log("Submitting", this.state)
+        let submitHandler = this.props.submitHandler
+        submitHandler(this.state)
+    }
+
     render(){
         return(
-            <form>
+            <form onSubmit={this.localClickHandler}>
                 <input type="text" placeholder="title" name="title" value={this.state.title}
                 onChange={this.changeHandler}/>
                 <input type="text" placeholder="synopsis" name="synopsis" value={this.state.synopsis}
                 onChange={this.changeHandler}/>
+                <button>Submit</button>
             </form>
         )
     }

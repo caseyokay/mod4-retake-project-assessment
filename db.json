@@ -1,54 +1,59 @@
 {
-    "movies": [
-        {
-            "id": 1,
-            "title": "The Dark Knight",
-            "synopsis": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice."
-        },
-        {
-            "id": 2,
-            "title": "Fight Club",
-            "synopsis": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more."
-        },
-        {
-            "id": 3,
-            "title": "Spirited Away",
-            "synopsis": "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts."
-        },
-        {
-            "id": 4,
-            "title": "Gladiator",
-            "synopsis": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery."
-        },
-        {
-            "id": 5,
-            "title": "Memento",
-            "synopsis": "A man with short-term memory loss attempts to track down his wife's murderer."
-        },
-        {
-            "id": 6,
-            "title": "Amelie",
-            "synopsis": "Amélie is an innocent and naive girl in Paris with her own sense of justice. She decides to help those around her and, along the way, discovers love."
-        },
-        {
-            "id": 7,
-            "title": "Your Name",
-            "synopsis": "Two strangers find themselves linked in a bizarre way. When a connection forms, will distance be the only thing to keep them apart?"
-        },
-        {
-            "id": 8,
-            "title": "Green Book",
-            "synopsis": "A working-class Italian-American bouncer becomes the driver of an African-American classical pianist on a tour of venues through the 1960s American South."
-        },
-        {
-            "id": 9,
-            "title": "V for Vendetta",
-            "synopsis": "In a future British tyranny, a shadowy freedom fighter, known only by the alias of 'V', plots to overthrow it with the help of a young woman."
-        },
-        {
-            "id": 10,
-            "title": "Inside Out",
-            "synopsis": "After young Riley is uprooted from her Midwest life and moved to San Francisco, her emotions - Joy, Fear, Anger, Disgust and Sadness - conflict on how best to navigate a new city, house, and school."
-        }
-    ]
+  "movies": [
+    {
+      "id": 1,
+      "title": "The Dark Knight",
+      "synopsis": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice."
+    },
+    {
+      "id": 2,
+      "title": "Fight Club",
+      "synopsis": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more."
+    },
+    {
+      "id": 3,
+      "title": "Spirited Away",
+      "synopsis": "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts."
+    },
+    {
+      "id": 4,
+      "title": "Gladiator",
+      "synopsis": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery."
+    },
+    {
+      "id": 5,
+      "title": "Memento",
+      "synopsis": "A man with short-term memory loss attempts to track down his wife's murderer."
+    },
+    {
+      "id": 6,
+      "title": "Amelie",
+      "synopsis": "Amélie is an innocent and naive girl in Paris with her own sense of justice. She decides to help those around her and, along the way, discovers love."
+    },
+    {
+      "id": 7,
+      "title": "Your Name",
+      "synopsis": "Two strangers find themselves linked in a bizarre way. When a connection forms, will distance be the only thing to keep them apart?"
+    },
+    {
+      "id": 8,
+      "title": "Green Book",
+      "synopsis": "A working-class Italian-American bouncer becomes the driver of an African-American classical pianist on a tour of venues through the 1960s American South."
+    },
+    {
+      "id": 9,
+      "title": "V for Vendetta",
+      "synopsis": "In a future British tyranny, a shadowy freedom fighter, known only by the alias of 'V', plots to overthrow it with the help of a young woman."
+    },
+    {
+      "id": 10,
+      "title": "Inside Out",
+      "synopsis": "After young Riley is uprooted from her Midwest life and moved to San Francisco, her emotions - Joy, Fear, Anger, Disgust and Sadness - conflict on how best to navigate a new city, house, and school."
+    },
+    {
+      "title": "HELLO NEW MOVIE",
+      "synopsis": "LSKsdkf",
+      "id": 11
+    }
+  ]
 }

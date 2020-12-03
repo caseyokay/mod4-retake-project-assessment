@@ -43,13 +43,28 @@ class App extends React.Component{
     this.setState({searchValue: e.target.value});
   }
 
+  submitHandler=(movieObj)=>{
+    console.log("In App", movieObj);
+    fetch('http://localhost:5000/movies', {
+      method: 'POST', // or 'PUT'
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(movieObj),
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
+  })
+}
+
 
   render(){
   return (
     <div className="App">
       <SearchForm searchValue={this.state.searchValue} changeHandler={this.searchChangeHandler}/>
       <MoviesList movieArray={this.state.api} clickHandler={this.rentMovie} searchValue={this.state.searchValue}/>
-      <AddMovieForm/>
+      <AddMovieForm submitHandler={this.submitHandler}/>
       <RentedMovies rentedMoviesArray={this.state.rentedMovies} clickHandler={this.returnMovie}/>
     </div>
   );}
