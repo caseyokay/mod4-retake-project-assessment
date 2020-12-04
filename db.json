@@ -59,6 +59,31 @@
       "title": "New Movie Title",
       "synopsis": "Bla",
       "id": 12
+    },
+    {
+      "title": "ITSSSSS DUNE",
+      "synopsis": "sand worm",
+      "id": 13
+    },
+    {
+      "title": "ITSSSSS DUNE",
+      "synopsis": "sand worm",
+      "id": 14
+    },
+    {
+      "title": "Helo Movie",
+      "synopsis": "its me",
+      "id": 15
+    },
+    {
+      "title": "New MOvie",
+      "synopsis": "New movie",
+      "id": 16
+    },
+    {
+      "title": "Denis Venvillue Dune",
+      "synopsis": "zendaya",
+      "id": 17
     }
   ]
 }

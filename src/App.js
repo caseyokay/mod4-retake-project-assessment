@@ -45,10 +45,12 @@ class App extends React.Component{
 
   submitHandler=(movieObj)=>{
     console.log("In App", movieObj);
+    // this.setState({api: [...this.state.api], movieObj});
     fetch('http://localhost:5000/movies', {
       method: 'POST', // or 'PUT'
       headers: {
         'Content-Type': 'application/json',
+        "Accepts": "application/json"
       },
       body: JSON.stringify(movieObj),
     })
@@ -56,6 +58,7 @@ class App extends React.Component{
     .then(newMovie => this.setState({api: [...this.state.api],  newMovie}));
     // .then(data => {
     //   console.log('Success:', data);
+    
 }
 
 
